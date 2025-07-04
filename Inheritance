@@ -1,0 +1,17 @@
+class parents:
+    def __init__(self):
+        self.father_name="Varun"
+        self.mother_name="Laxmi"
+
+class student(parents):
+    def __init__(self):
+        super().__init__()
+        self.firstname="lav"
+        self.lastname="Kumar"
+        self.std="LKG"
+        self.result="First class"
+    def announcement(details):
+        print(f"The student's name is {details.firstname} {details.lastname} currently studing in {details.std} and the son of {details.father_name} & {details.mother_name} has secured {details.result} in the final exam.")
+
+x=student()
+x.announcement()
